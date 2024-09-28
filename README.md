@@ -58,3 +58,9 @@
 - Si hay usuario logueado y es administrador, nos redirige a la lista de todas las tareas.
 - Si hay usuario logueado y no es administrador, nos redirige a la lista de tareas asignadas al usuario.
 - Cuando un usuario se loguea redirige a /.
+
+
+COMENTARIO:
+No pude hacer casi nada practicamente, me recontra perdi, la esctructuracion y demas me hizo perderme y no entendi bien la consigna, la terminé entendiendo al final leyendo la documentación.
+Al final terminé haciendo puro front y hasta sin probar algunas cosas.
+
