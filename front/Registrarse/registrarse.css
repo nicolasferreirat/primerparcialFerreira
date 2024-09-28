@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightblue;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+label {
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#botonRegistro {
+    background-color: #007BFF; 
+    color: white;
+    padding: 20px 20px;
+    font-size: 16px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+#botonRegistro:hover {
+    background-color: #0056b3; 
+}
+#botonRegistro:active {
+    background-color: #004494; 
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.contenedor-contrasena, .contenedor-repcontrasena {
+    position: relative;
+    display: flex;
+    width: 100%; 
+}
+
+#contraseña, #repetirContraseña {
+    width: 100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.toggle-contrasena {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%); 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+    text-align: center;
+}
+
+#requerimientosContraseña {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.errorBoton {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.boton-menu {
+    background-color: #384858; 
+    color: white;
+    padding: 10px 25px;
+    font-size: 14px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-top: 10px;
+    flex: 1;
+    max-width: 48%;
+    max-height: 100%;
+    height: 50px;
+}
+
+.boton-menu:hover {
+    background-color: #70b416; 
+}
+
+.boton-menu:active {
+    background-color: #004494; 
+}
+
+#togglerepPassword img, #togglePassword img {
+    width: 24px; 
+}

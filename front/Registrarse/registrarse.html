@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario - JavaScript</title>
+        <link rel="stylesheet" href="registrarse.css">
+        <script defer src="registrarse.js"></script>
+    </head>
+    <body>
+        <form id="formulario">
+            <h2>Formulario de Registro</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <p class="error" id="errorNombre"></p>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="text" id="email" name="email" required>
+            <p class="error" id="errorMail"></p>
+
+            <label for="contrasena">Contraseña:</label>
+            <div class="contenedor-contrasena">
+                <input type="password" id="contrasena" name="contrasena" required autocomplete="off">
+                <button type="button" id="togglePassword" class="toggle-contrasena" tabindex="-1"></button>
+            </div>
+            <p id="requerimientoscontrasena">
+                (8-12 caracteres, 1 mayúscula, 1 número, 1 caracter especial)
+            </p>
+            
+            <label for="idAdmin">Perfil Administrador:</label>
+            <input type="text" id="isAdmin" name="isAdmin" required>
+            <p class="error" id="errorAdmin"></p>
+            <p id="requerimientosIsAdmin"></p>
+                (Escriba "si" si desea ser Administrador, o "no" si no desea serlo)
+            </p>
+
+            <button type="button"id="botonRegistro">Registrarse</button>
+            <p class="errorBoton" id="errorBotonRegistro"></p>
+            
+            <button type="button" id="menu" class="boton-menu">Cancelar</button>
+            
+        </form>
+    </body>
+</html>
